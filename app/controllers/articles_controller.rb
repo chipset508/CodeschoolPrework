@@ -8,7 +8,6 @@ class ArticlesController < ApplicationController
     if params[:search]
       @articles = Article.search(params[:search])
     else
-      puts 'Test noti'
       @articles = Article.all
     end
   end
